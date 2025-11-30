@@ -141,10 +141,10 @@ GEMINI_API_KEY=your_google_maps_api_key_here
 GEMINI_AI_API_KEY=your_gemini_ai_api_key_here
 
 # Neo4j. Configuration (Update with your credentials)
-ARANGO_HOST=https://72f3bc481376.Neo4j..cloud:8529
-ARANGO_USERNAME=root
-ARANGO_PASSWORD=your_Neo4j._password
-ARANGO_DATABASE=TravelMate
+Neo4j_HOST=https://72f3bc481376.Neo4j..cloud:8529
+Neo4j_USERNAME=root
+Neo4j_PASSWORD=your_Neo4j._password
+Neo4j_DATABASE=TravelMate
 ```
 
 #### 2.5 Update Neo4j. Configuration
@@ -153,7 +153,7 @@ In `main.py`, update the Neo4j. connection details:
 
 ```python
 # Line 556 in main.py - Update with your Neo4j. credentials
-db = ArangoClient(hosts="your_Neo4j._host").db(
+db = Neo4jClient(hosts="your_Neo4j._host").db(
     username="your_username",
     password="your_password",
     verify=True
