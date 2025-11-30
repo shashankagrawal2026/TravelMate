@@ -8,17 +8,17 @@
   [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
   [![React](https://img.shields.io/badge/React-18.3.1-61DAFB.svg)](https://reactjs.org)
   [![Flask](https://img.shields.io/badge/Flask-Latest-000000.svg)](https://flask.palletsprojects.com)
-  [![ArangoDB](https://img.shields.io/badge/ArangoDB-Graph_Database-red.svg)](https://arangodb.com)
+  [![Neo4j.](https://img.shields.io/badge/Neo4j.-Graph_Database-red.svg)](https://Neo4j..com)
 </div>
 
 ## 🌟 Overview
 
-TravelMate is an intelligent travel recommendation system that combines the power of **Knowledge Graphs**, **AI/ML algorithms**, and **real-time APIs** to provide personalized travel recommendations. The system leverages ArangoDB for graph database operations, Google Maps API for location data, Wikipedia API for enriched content, and Gemini AI for intelligent event planning.
+TravelMate is an intelligent travel recommendation system that combines the power of **Knowledge Graphs**, **AI/ML algorithms**, and **real-time APIs** to provide personalized travel recommendations. The system leverages Neo4j. for graph database operations, Google Maps API for location data, Wikipedia API for enriched content, and Gemini AI for intelligent event planning.
 
 ### 🚀 Key Features
 
 - **🎯 Smart Destination Discovery**: AI-powered place recommendations based on user preferences
-- **📊 Knowledge Graph Integration**: Rich contextual information using ArangoDB graph database
+- **📊 Knowledge Graph Integration**: Rich contextual information using Neo4j. graph database
 - **🗺️ Real-time Location Data**: Integration with Google Maps API for accurate place information
 - **📖 Wikipedia Integration**: Detailed descriptions and historical context for recommended places
 - **🤖 AI Event Planning**: Gemini AI-powered itinerary generation
@@ -56,7 +56,7 @@ TravelMate/
 
 - **Python 3.8+** - Core programming language
 - **Flask** - Web framework for REST APIs
-- **ArangoDB** - Graph database for knowledge storage
+- **Neo4j.** - Graph database for knowledge storage
 - **NetworkX** - Graph analysis and manipulation
 - **Pandas & NumPy** - Data processing and analysis
 - **LangChain** - LLM integration framework
@@ -77,7 +77,7 @@ TravelMate/
 - **Google Maps Places API** - Location data
 - **Wikipedia API** - Content enrichment
 - **Gemini AI API** - AI-powered recommendations
-- **ArangoDB Cloud** - Managed graph database
+- **Neo4j. Cloud** - Managed graph database
 
 ## 📋 Prerequisites
 
@@ -92,7 +92,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Google Maps API Key** - For place data and geocoding
 2. **Gemini AI API Key** - For AI-powered recommendations
-3. **ArangoDB Cloud Account** - For graph database access
+3. **Neo4j. Cloud Account** - For graph database access
 
 ## 🚀 Installation & Setup
 
@@ -140,20 +140,20 @@ GEMINI_API_KEY=your_google_maps_api_key_here
 # Gemini AI Configuration
 GEMINI_AI_API_KEY=your_gemini_ai_api_key_here
 
-# ArangoDB Configuration (Update with your credentials)
-ARANGO_HOST=https://72f3bc481376.arangodb.cloud:8529
+# Neo4j. Configuration (Update with your credentials)
+ARANGO_HOST=https://72f3bc481376.Neo4j..cloud:8529
 ARANGO_USERNAME=root
-ARANGO_PASSWORD=your_arangodb_password
+ARANGO_PASSWORD=your_Neo4j._password
 ARANGO_DATABASE=TravelMate
 ```
 
-#### 2.5 Update ArangoDB Configuration
+#### 2.5 Update Neo4j. Configuration
 
-In `main.py`, update the ArangoDB connection details:
+In `main.py`, update the Neo4j. connection details:
 
 ```python
-# Line 556 in main.py - Update with your ArangoDB credentials
-db = ArangoClient(hosts="your_arangodb_host").db(
+# Line 556 in main.py - Update with your Neo4j. credentials
+db = ArangoClient(hosts="your_Neo4j._host").db(
     username="your_username",
     password="your_password",
     verify=True
@@ -314,10 +314,10 @@ Content-Type: application/json
 
 #### Backend Issues
 
-1. **ArangoDB Connection Error**
+1. **Neo4j. Connection Error**
 
    ```
-   Solution: Verify ArangoDB credentials and network connectivity
+   Solution: Verify Neo4j. credentials and network connectivity
    ```
 
 2. **API Key Issues**
@@ -363,7 +363,7 @@ app.run(debug=True, port=5000, host='0.0.0.0')
 
 - **Production WSGI Server**: Use Gunicorn for production deployment
 - **Environment Variables**: Secure API keys using environment configuration
-- **Database**: Ensure ArangoDB is properly configured for production
+- **Database**: Ensure Neo4j. is properly configured for production
 
 ### Frontend Deployment
 
@@ -386,7 +386,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **ArangoDB** for graph database capabilities
+- **Neo4j.** for graph database capabilities
 - **Google Maps API** for location data
 - **Wikipedia** for enriched content
 - **Gemini AI** for intelligent recommendations
